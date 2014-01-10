@@ -42,6 +42,8 @@ nav {
 	list-style: none;
 	margin-left: auto;
 	margin-right: auto;
+	margin-top: 2px;
+	margin-bottom: 2px;
 }
 
 .nav_bar_item {
@@ -56,17 +58,11 @@ nav {
 	color: #4d4d4d;
 }
 
-.nav_bar_item:link {
-	text-decoration: none;
-}
-
-.nav_bar_item:visited {
-	color: #4d4d4d;
-	text-decoration: none;
-}
-
-.nav_bar_item:hover {
-	text-decoration: none;
+.nav_bar_divisor {
+	padding: 0px;
+	width: 1px;
+	height: 44px;
+	background-image: url('images/nav_bar_divisor.png');
 }
 
 #delimiter {

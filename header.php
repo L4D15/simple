@@ -16,7 +16,9 @@
 				<?php
 					// Home link
 					$home_link = home_url();
+					echo "<li class='nav_bar_item nav_bar_divisor'></li>";
 					echo "<li class='nav_bar_item'><a href='$home_link'>Home</a></li>";
+					echo "<li class='nav_bar_item nav_bar_divisor'></li>";
 					$pages = get_pages();
 				 	foreach ($pages as $page) {
 				 	 	echo "<li class='nav_bar_item'>
