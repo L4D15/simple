@@ -1,5 +1,21 @@
+/*
+Theme Name: Simple
+Theme URI: http://jladis.com
+Author: José Ladislao Lainez Ortega
+Author URI: http://jladis.com
+Description: Simple and clean theme for Wordpress.
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: white, clean, simple, navbar
+Text Domain: simple
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
 body {
 	font-family: "Open Sans", "Droid Sans", arial, sans-serif;
+	text-align: justify;
 	color: #4d4d4d;
 	padding: 0px;
 	margin: 0px;
@@ -31,7 +47,7 @@ nav {
 	background-color: white;
 	background-image: url('images/nav_bar_bg.png');
 	min-height: 32px;
-	box-shadow: 0px 1px 5px #ccc;
+	box-shadow: 0px 1px 1px #ccc;
 }
 
 #nav-list {
@@ -42,6 +58,8 @@ nav {
 	list-style: none;
 	margin-left: auto;
 	margin-right: auto;
+	margin-top: 2px;
+	margin-bottom: 2px;
 }
 
 .nav_bar_item {
@@ -56,20 +74,14 @@ nav {
 	color: #4d4d4d;
 }
 
-.nav_bar_item:link {
-	text-decoration: none;
+.nav_bar_divisor {
+	padding: 0px;
+	width: 1px;
+	height: 44px;
+	background-image: url('images/nav_bar_divisor.png');
 }
 
-.nav_bar_item:visited {
-	color: #4d4d4d;
-	text-decoration: none;
-}
-
-.nav_bar_item:hover {
-	text-decoration: none;
-}
-
-#delimiter {
+.divisor {
 	clear: both;
 	border: 1px dashed #ccc;
 }
@@ -77,16 +89,27 @@ nav {
 a {
 	color: #4d4d4d;
 	text-decoration: none;
-	text-shadow: #fff 0 1px 0;
 }
 
 a:hover {
-	color: #000;
+	color: black;
+	text-shadow: 0px 1px 1px #ccc;
 }
 
 a:visited {
 	text-decoration: none;
-	color: #4d4d4d;
+}
+
+a:active {
+	text-decoration: none;
+}
+
+a:visited:hover {
+	color: black;
+}
+
+a:active:hover {
+	color: black;
 }
 
 footer {
@@ -121,4 +144,18 @@ small {
 	font-weight: normal;
 	color: #ccc;
 	margin-left: 13px;
+}
+
+/* Wordpress styles */
+
+.aligncenter {
+	display: block;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.wp-image-11 {
+	border-radius: 5px;
+	box-shadow: 0px 1px 5px #ccc;
 }
