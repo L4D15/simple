@@ -22,6 +22,11 @@ body {
 	height: 100%;
 }
 
+body p {
+	font-family: "Droid Sans", helvetica, arial, sans-serif;
+	font-size: 14px;
+}
+
 #wrapper {
 	position: relative;
 	display: block;
@@ -220,8 +225,8 @@ small {
 }
 
 .avatar {
-	border: 1px solid #ccc;
-	border-radius: 5px;
+	border: none;
+	border-radius: 50%;
 }
 
 .comment-author {
@@ -275,7 +280,7 @@ small {
 }
 
 #submit:hover {
-	cursor: auto;
+	cursor: pointer;
 	box-shadow: 0px 1px 1px #ccc;
 }
 

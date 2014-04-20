@@ -43,7 +43,7 @@ if ( post_password_required() ) {
 			wp_list_comments( array(
 				'style'      => 'ol',
 				'short_ping' => true,
-				'avatar_size'=> 34,
+				'avatar_size'=> 48,
 			) );
 		?>
 	</ol><!-- .comment-list -->
@@ -62,7 +62,7 @@ if ( post_password_required() ) {
 
 	<?php endif; // have_comments() ?>
 
-	<?php 
+	<?php
 	$commenter = wp_get_current_commenter();
 	$req = get_option( 'require_name_email' );
 	$aria_req = ( $req ? " aria-required='true'" : '' );
@@ -84,7 +84,7 @@ if ( post_password_required() ) {
 	    '<p class="comment-form-url"><label for="url">' . __( 'Website', 'domainreference' ) . '</label>' .
 	    '<input id="url" class="form-field" name="url" type="text" placeholder="Website" value="' . esc_attr( $commenter['comment_author_url'] ) .
 	    '" size="30" /></p>',
-	    
+
 	    'comment_field' =>
 	    '<p class="comment-form-comment"><textarea id="comment" name="comment" aria-required="true"></textarea></p>',
 
